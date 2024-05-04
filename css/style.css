@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 12{
+    .col#{$i}{
+        width: (100%/(12/$i)) - 3%;
+        margin: 1.5%;
+    }
+}
+
+// nav
+.header{
+    padding: 20px 0;
+}
+.nav-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.5%;
+    justify-content: space-between;
+    align-items: center;
+    &=brand{
+        h1{
+            a{
+                text-decoration: none;
+                color: black;
+                span{
+                    color: red;
+                }
+            }
+        }
+    }
+    menu {
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            hover{
+                color: darkred;
+            }
+        }
+    }
+    .profile{
+
+    }
+}
+
+
+.btn{
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.165, 0.84,0.44, 1) 1s;
+    & hover{
+        color: wheat;
+        background: darkred;
+    }
+}
+
+.ai-center{
+    align-items: center;
+}
+.img-responsive{
+    width: 100%;
+}
+
+.hero{
+    padding: 5% 0;
+        h2{
+            font-size: 2.0em;
+            line-height: 120%;
+            margin-bottom: 20px;
+            span{
+                color: darkred;
+            }
+        }
+    }
+    p{
+        line-height: 180%;
+    }
+  
+}
+// spacer
+.spacer30{
+    height: 30px;
+}
+
+
+// feFlood.food{
+    .fc-title{
+        text-transform: capitalize;
+    }
+    .fc-dexc{
+        h3{
+            text-transform: capitalize;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            color: #777;
+
+        }
+    }
+    .fc-price{
+        display: flex;
+        justify-content: space-between;
+        .price-tag{
+            font-size: 20px;
+        }
+        .price-nun{
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+}
